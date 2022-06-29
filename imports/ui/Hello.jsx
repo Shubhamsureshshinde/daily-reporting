@@ -7,7 +7,7 @@ export const Hello = () => {
     setCounter(counter + 1);
   };
 
-	 const decrement = () => {
+	 const decrement = () => {meteor 
     setCounter(counter - 1);
   };
 
