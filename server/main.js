@@ -1,33 +1,25 @@
 import { Meteor } from 'meteor/meteor';
 // import { LinksCollection } from '/imports/api/links';
 import { Players, PLayersCollection, TasksCollection } from '../imports/api/TasksCollections';
+import" api/tasksMethds.js"
+import "imports/api/TasksPublication.js"
 
 
-const insertTask = AA => TasksCollection.insert({AB:AA})
+const insertTask = AA => TasksCollection.insert({ AB: AA })
 Meteor.startup(() => {
-	if (TasksCollection.find().count()=== 0 ){
-[
-	"first Task",
-	"second Task",
-	"third Task",
-	"fourth Task",
-	"fifth Task",
-	"sixth Task",
-	"seventh Task"
-	].forEach(insertTask)
-}
-})
+	if (TasksCollection.find().count() === 0) {
+		[
+			"first Task",
+			"second Task",
+			"third Task",
+			"fourth Task",
+			"fifth Task",
+			"sixth Task",
+			"seventh Task"
+		].forEach(insertTask)
 
 
-const insertPlayerInfo = InfoText => PLayersCollection.insert({players:InfoText})
-Meteor.startup(()=>{
-	if (PLayersCollection.find().count()===0){
-		["dfsdfsdf", "sdfggre", "ggewhiufwfy"].forEach(insertPlayerInfo)
-	}
-})
-
-
-
+}})
 
 
 

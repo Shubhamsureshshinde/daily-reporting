@@ -10,4 +10,3 @@ export const Task =({ task, onCheckboxClick, onDeleteClick})=>{
 </span>
 		</li>
 }
-
